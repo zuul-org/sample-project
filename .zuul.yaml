@@ -1,5 +1,5 @@
 - project:
-    name: zuul-org/sample-project
+    name: zuul-org/sampleproject
     check:
       jobs:
         - noop
