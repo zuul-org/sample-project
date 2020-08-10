@@ -3,4 +3,14 @@
     check:
       jobs:
         - noop
-        ggg: {{}}
+        - echo
+
+- job:
+    name: timeout
+    run: timeout.yaml
+
+- job:
+    name: echo
+    required-projects:
+      - zuul-org/zuul-test
+    run: echo.yaml
